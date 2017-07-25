@@ -2,9 +2,9 @@
 lock '3.8.2'
 
 set :application, 'frab'
-set :repo_url, 'https://github.com/frab/frab.git'
+set :scm, :git
+set :repo_url, 'git@github.com:makandra/frab.git'
 
-# Default branch is :master
 set :branch, 'master'
 set :user, ENV['CAP_USER']
 
