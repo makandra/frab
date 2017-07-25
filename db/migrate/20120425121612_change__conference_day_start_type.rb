@@ -6,8 +6,9 @@ class ChangeConferenceDayStartType < ActiveRecord::Migration[4.2]
       starts << Time.at(conference.day_start).hour
       ends << Time.at(conference.day_end).hour
     end
-    change_column :conferences, :day_start, :integer, default: "8", null: false
-    change_column :conferences, :day_end, :integer, default: "20", null: false
+    # not possible in Postgres & not necessary for us atm
+    #change_column :conferences, :day_start, :integer, default: "8", null: false
+    #change_column :conferences, :day_end, :integer, default: "20", null: false
     # do conversion
     Conference.all.each_with_index do |conference,i|
       conference.update_attribute :day_start, starts[i]
