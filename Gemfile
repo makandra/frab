@@ -14,6 +14,8 @@ gem 'rails', '~> 5.1.0'
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
+gem 'therubyracer', platform: :ruby
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails'
 
