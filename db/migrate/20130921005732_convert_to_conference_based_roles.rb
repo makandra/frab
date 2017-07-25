@@ -1,4 +1,4 @@
-class ConvertToConferenceBasedRoles < ActiveRecord::Migration
+class ConvertToConferenceBasedRoles < ActiveRecord::Migration[4.2]
   def up
     User.where(role: %w{orga coordinator reviewer}).each { |user|
       puts "Changing #{user.email} from #{user.role} to 'crew'"

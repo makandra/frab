@@ -1,4 +1,4 @@
-class AddScheduleVersionToConferences < ActiveRecord::Migration
+class AddScheduleVersionToConferences < ActiveRecord::Migration[4.2]
   def self.up
     add_column :conferences, :schedule_version, :string, default: nil
   end

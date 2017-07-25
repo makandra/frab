@@ -1,4 +1,4 @@
-class PrivateAttachments < ActiveRecord::Migration
+class PrivateAttachments < ActiveRecord::Migration[4.2]
   def up
     add_column :event_attachments, :public, :boolean, default: true
     EventAttachment.reset_column_information

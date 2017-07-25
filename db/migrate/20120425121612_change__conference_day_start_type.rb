@@ -1,4 +1,4 @@
-class ChangeConferenceDayStartType < ActiveRecord::Migration
+class ChangeConferenceDayStartType < ActiveRecord::Migration[4.2]
   def up
     starts = Array.new
     ends = Array.new

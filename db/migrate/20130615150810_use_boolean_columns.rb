@@ -1,4 +1,4 @@
-class UseBooleanColumns < ActiveRecord::Migration
+class UseBooleanColumns < ActiveRecord::Migration[4.2]
   def up
     change_column :events, :public, :boolean, default: false
     change_column :people, :email_public, :boolean, default: true

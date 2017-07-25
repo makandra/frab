@@ -1,4 +1,4 @@
-class AddCallForPapersToUser < ActiveRecord::Migration
+class AddCallForPapersToUser < ActiveRecord::Migration[4.2]
   def self.up
     add_column :users, :call_for_papers_id, :integer
   end

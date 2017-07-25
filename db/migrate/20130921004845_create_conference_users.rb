@@ -1,4 +1,4 @@
-class CreateConferenceUsers < ActiveRecord::Migration
+class CreateConferenceUsers < ActiveRecord::Migration[4.2]
   def change
     create_table :conference_users do |t|
       t.string :role

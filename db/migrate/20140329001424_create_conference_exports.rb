@@ -1,4 +1,4 @@
-class CreateConferenceExports < ActiveRecord::Migration
+class CreateConferenceExports < ActiveRecord::Migration[4.2]
   def change
     create_table :conference_exports do |t|
       t.string :locale

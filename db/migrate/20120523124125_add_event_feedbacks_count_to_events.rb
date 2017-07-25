@@ -1,4 +1,4 @@
-class AddEventFeedbacksCountToEvents < ActiveRecord::Migration
+class AddEventFeedbacksCountToEvents < ActiveRecord::Migration[4.2]
   def self.up
     add_column :events, :event_feedbacks_count, :integer, default: 0
     Event.reset_column_information

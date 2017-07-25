@@ -1,4 +1,4 @@
-class AddAverageFeedbackToEvent < ActiveRecord::Migration
+class AddAverageFeedbackToEvent < ActiveRecord::Migration[4.2]
   def self.up
     add_column :events, :average_feedback, :float
     Event.joins(:event_feedbacks).readonly(false).all.each {|e| e.recalculate_average_feedback!}

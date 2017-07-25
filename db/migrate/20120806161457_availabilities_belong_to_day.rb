@@ -1,4 +1,4 @@
-class AvailabilitiesBelongToDay < ActiveRecord::Migration
+class AvailabilitiesBelongToDay < ActiveRecord::Migration[4.2]
   def up
 
     # convert availability times

@@ -1,4 +1,4 @@
-class CreateTicketServers < ActiveRecord::Migration
+class CreateTicketServers < ActiveRecord::Migration[4.2]
   def change
     create_table :ticket_servers do |t|
       t.integer :conference_id, null: false

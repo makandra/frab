@@ -1,4 +1,4 @@
-class NotesFields < ActiveRecord::Migration
+class NotesFields < ActiveRecord::Migration[4.2]
   def up
     add_column :events, :note, :text
     add_column :events, :submission_note, :text

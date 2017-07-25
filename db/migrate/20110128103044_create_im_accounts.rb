@@ -1,4 +1,4 @@
-class CreateImAccounts < ActiveRecord::Migration
+class CreateImAccounts < ActiveRecord::Migration[4.2]
   def self.up
     create_table :im_accounts do |t|
       t.integer :person_id

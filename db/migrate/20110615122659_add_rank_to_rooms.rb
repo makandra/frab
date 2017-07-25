@@ -1,4 +1,4 @@
-class AddRankToRooms < ActiveRecord::Migration
+class AddRankToRooms < ActiveRecord::Migration[4.2]
   def self.up
     add_column :rooms, :rank, :integer
     Room.reset_column_information

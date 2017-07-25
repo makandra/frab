@@ -1,4 +1,4 @@
-class AddGuidToEvents < ActiveRecord::Migration
+class AddGuidToEvents < ActiveRecord::Migration[4.2]
   def up
     add_column :events, :guid, :string
     Event.reset_column_information

@@ -1,4 +1,4 @@
-class CreateProducts < ActiveRecord::Migration
+class CreateProducts < ActiveRecord::Migration[4.2]
 
   def up
     create_table "ordered_products", :force => true do |t|

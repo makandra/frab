@@ -1,4 +1,4 @@
-class CreateTracks < ActiveRecord::Migration
+class CreateTracks < ActiveRecord::Migration[4.2]
   def self.up
     create_table :tracks do |t|
       t.integer :conference_id

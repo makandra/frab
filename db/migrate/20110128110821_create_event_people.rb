@@ -1,4 +1,4 @@
-class CreateEventPeople < ActiveRecord::Migration
+class CreateEventPeople < ActiveRecord::Migration[4.2]
   def self.up
     create_table :event_people do |t|
       t.integer :event_id, null: false

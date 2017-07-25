@@ -1,4 +1,4 @@
-class FillPublicName < ActiveRecord::Migration
+class FillPublicName < ActiveRecord::Migration[4.2]
   def up
     Person.reset_column_information
     Person.find(:all).each do |person|

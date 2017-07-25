@@ -1,4 +1,4 @@
-class AddSpeakerCounter < ActiveRecord::Migration
+class AddSpeakerCounter < ActiveRecord::Migration[4.2]
   def up
     add_column :events, :speaker_count, :integer, default: 0
 

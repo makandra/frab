@@ -1,4 +1,4 @@
-class CreateEventRatings < ActiveRecord::Migration
+class CreateEventRatings < ActiveRecord::Migration[4.2]
   def self.up
     create_table :event_ratings do |t|
       t.integer :event_id

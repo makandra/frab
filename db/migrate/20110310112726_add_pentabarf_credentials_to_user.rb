@@ -1,4 +1,4 @@
-class AddPentabarfCredentialsToUser < ActiveRecord::Migration
+class AddPentabarfCredentialsToUser < ActiveRecord::Migration[4.2]
   def self.up
     add_column :users, :pentabarf_salt, :string
     add_column :users, :pentabarf_password, :string

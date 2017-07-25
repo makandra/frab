@@ -1,4 +1,4 @@
-class AddEventRatingsCountToEvents < ActiveRecord::Migration
+class AddEventRatingsCountToEvents < ActiveRecord::Migration[4.2]
   def self.up
     add_column :events, :event_ratings_count, :integer, default: 0
     Event.reset_column_information

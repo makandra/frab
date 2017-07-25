@@ -1,4 +1,4 @@
-class CreateIndexes < ActiveRecord::Migration
+class CreateIndexes < ActiveRecord::Migration[4.2]
   def up
     # missing from schema.rb
     unless index_exists? :users, :confirmation_token, unique: true

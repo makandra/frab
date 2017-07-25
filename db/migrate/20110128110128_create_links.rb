@@ -1,4 +1,4 @@
-class CreateLinks < ActiveRecord::Migration
+class CreateLinks < ActiveRecord::Migration[4.2]
   def self.up
     create_table :links do |t|
       t.string :title, null: false

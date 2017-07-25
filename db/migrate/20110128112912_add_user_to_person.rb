@@ -1,4 +1,4 @@
-class AddUserToPerson < ActiveRecord::Migration
+class AddUserToPerson < ActiveRecord::Migration[4.2]
   def self.up
     add_column :people, :user_id, :integer
   end

@@ -1,4 +1,4 @@
-class RemoveProducts < ActiveRecord::Migration
+class RemoveProducts < ActiveRecord::Migration[4.2]
   def up
     drop_table :ordered_products
     drop_table :product_types

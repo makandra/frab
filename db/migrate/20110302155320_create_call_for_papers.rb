@@ -1,4 +1,4 @@
-class CreateCallForPapers < ActiveRecord::Migration
+class CreateCallForPapers < ActiveRecord::Migration[4.2]
   def self.up
     create_table :call_for_papers do |t|
       t.date :start_date, null: false
