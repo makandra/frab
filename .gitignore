@@ -23,10 +23,8 @@ specifications/
 .vagrant
 doc/
 tags
-config/deploy/production.rb
 .DS_Store
 *.patch
-config/deploy/*.rb
 config/puma.rb
 contrib/
 db/development.sqlite3.*
