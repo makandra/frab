@@ -33,3 +33,4 @@ Dotenv.load
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 
 after 'deploy:published', 'deploy:restart'
+after 'deploy:finished', 'deploy:cleanup' # https://makandracards.com/makandra/1432-capistrano-delete-old-releases
