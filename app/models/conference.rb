@@ -144,6 +144,14 @@ class Conference < ApplicationRecord
     days.max
   end
 
+  def start_date
+    first_day.start_date
+  end
+
+  def end_date
+    last_day.end_date
+  end
+
   def day_at(date)
     i = 1
     days.each { |day|
